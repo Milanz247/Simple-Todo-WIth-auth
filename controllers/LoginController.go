@@ -11,6 +11,7 @@ import (
 type LoginRequest struct {
 	Email    string `json:"email"`
 	Password string `json:"password"`
+	Address String `json:"password"`
 }
 
 func LoginUser(w http.ResponseWriter, r *http.Request) {
